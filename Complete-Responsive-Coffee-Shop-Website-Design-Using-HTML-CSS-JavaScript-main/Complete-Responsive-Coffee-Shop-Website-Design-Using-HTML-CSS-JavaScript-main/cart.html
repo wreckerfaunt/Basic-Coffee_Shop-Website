@@ -6,6 +6,11 @@
     <title>Document</title>
 
     <style>
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
         #cart {
             margin-top: 100px;
         }
@@ -17,10 +22,36 @@
         table {
             justify-content: space-between;
             font-size: 24px;
+            padding: 40px;
+            width: 40%;
+            border-bottom: 2px solid #433;
         }
 
-        table thead {
+        thead {
             border-bottom: 2px solid #433;
+        }
+
+        td {
+            padding-inline: 60px;
+        }
+
+        #items {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .cart-order {
+            width: 40%;
+        }
+
+        .btn-o {
+            margin-top: 20px;
+            padding: 40px;
+        }
+
+        .btn-o:hover {
+            background-color: black;
+            color: white;
         }
 
     </style>
@@ -81,6 +112,10 @@
                 </tr>
             </table>
         </div>
+        <div class="cart-order">
+            <button onclick="order()" class="btn-o">Order</button>
+        </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
